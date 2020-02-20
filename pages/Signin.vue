@@ -8,8 +8,11 @@
                  <p class="text-center">Login to continue. </p>
                  <div class="row">
                      <div class="col-12">
-                         <form action="">
-                            <div class="form-group">
+                         <form @submit.prevent="login()" action="">
+                             <div v-if="err" class="alert alert-danger">
+                                 {{ err }}
+                             </div>
+                            <div class="form-group pt-4">
                                 <label for="email">Email Adress</label>
                                 <input type="text" class="form-control" v-model="email" placeholder="smithwilliams@gmail.com">
                             </div>
@@ -35,7 +38,27 @@
 
 <script>
 export default {
-
+data(){
+    return{
+        email:null,
+        password:null,
+        err:null
+    }
+},
+methods:{
+    login(){
+        //Check if the form was actually filled out
+        if(!this.email || !this.password){
+            this.err = 'Please provide your credentials!'
+            this.removeAlert()
+        }
+    },
+        removeAlert(){
+            setTimeout(() => {
+                document.querySelector('.alert').remove()
+            }, 5000);
+        }
+}
 }
 </script>
 

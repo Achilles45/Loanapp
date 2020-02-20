@@ -43,8 +43,10 @@ export default {
             color: #fff;
             font-size: .8rem;
             &:hover{
-                padding: 1.2rem 4rem;
-                transition: all ease-in-out .5s;
+                background: #33B27B;
+                color: #fff;
+                transition: all ease-in-out .3s;
+                border-color: #33B27B;
             }
         }
     }
