@@ -58,6 +58,7 @@
 <script>
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
+import db from '~/firebase/init'
 export default {
     data(){
         return{
@@ -78,6 +79,11 @@ export default {
                 this.err = 'Fields cannot be empty, please try again!'
                 this.removeAlert();
             }else{
+                db.firestore().collection('messages').add({
+                    name:this.name,
+                    email:this.email,
+                    message:this.message
+                })
                 this.success = 'Message successful sent. We will get back to you shortly!'
                 this.name = '';
                 this.email = '';
