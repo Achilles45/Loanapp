@@ -8,12 +8,12 @@
               </div>
               <div class="col-md-4">
                   <h5>Contact Details</h5>
-                  <h6>Head Office</h6>
-                  <p>30 Omotayo Ojo Street, Off Allen Aenue, Ikeja, Lagos State, Nigeria.</p>
+                  <h6>Offices</h6>
+                  <p>245 East Ohio Street, Chicago, IL 60611 </p>
                   <h6>Email Address</h6>
-                  <p>example@gmai.com</p>
+                  <p>example@gmail.com</p>
                   <h6>Phone</h6>
-                  <p>+2348 102 365 365</p>
+                  <p>+1 618-710-6254</p>
               </div>
               <div class="col-md-4">
                   <h5>Disclaimer</h5>

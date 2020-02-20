@@ -7,8 +7,7 @@
         <ul class="d-flex justify-conetent-between pt-2">
             <li><nuxt-link to="/">Home</nuxt-link></li>
             <li><nuxt-link to="/about">About Us</nuxt-link></li>
-            <li><nuxt-link to="/">Products</nuxt-link></li>
-            <li><nuxt-link to="/">Contact Us</nuxt-link></li>
+            <li><nuxt-link to="/contact">Contact Us</nuxt-link></li>
             <li><nuxt-link to="/register">Create a free account</nuxt-link></li>
             <li><nuxt-link to="/signin" class="login__link">Sign In</nuxt-link></li>
         </ul>
